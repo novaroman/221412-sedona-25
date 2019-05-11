@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Roman Boiar](https://up.htmlacademy.ru/htmlcss/25/user/221412).
-* Наставник: [Анатолий Пазюк] (https://htmlacademy.ru/profile/id380487).
+* Наставник: [Анатолий Пазюк](https://htmlacademy.ru/profile/id380487).
 
 ---
 
