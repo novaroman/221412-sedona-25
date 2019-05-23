@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans', Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+
+    background-color: #ffffff;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-list a {
+    color: #000000;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+    color: #81b3d2;
+}
+
+.navigation-list a:active {
+    color: #cacaca;
+}
+
+.navigation-list .item-active {
+    color: #766357;
+}
+
+.hello {
+    background-image: url(../img/background-photo.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    background-color: darkslategray;
+}
+
+.attract {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.reasons p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.interest h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.search-instruction {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.search-hotel-button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+
+    background-color: #766357;
+
+}
+
+.search-hotel-button:hover,
+.search-hotel-button:focus {
+    background-color: #604e43;
+}
+
+.search-hotel-button:active {
+    background-color: #503e33;
+}
+
+.hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-social-list {
+    list-style: none;
+}
+
+.footer-social-list img {
+    background-color: #81b3d2;
+}
+
+.footer-social-list img:hover,
+.footer-social-list img:focus {
+    background-color: #669ec0;
+}
+
+.footer-social-list img:active {
+    background-color: #5496bd;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.catalog-item-title:hover,
+.catalog-item-title:focus {
+    color: #81b3d2;
+}
+
+.catalog-item-title:active {
+    color: #cacaca;
+}
+
+.catalog-category,
+.catalog-price {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.detail-button,
+.book-button {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.detail-button {
+    background-color: #81b3d2;
+}
+
+.book-button {
+    background-color: #766357;
+}
+
+.detail-button:hover,
+.detail-button:focus {
+    background-color: #669ec0;
+}
+
+.book-button:hover,
+.book-button:focus {
+    background-color: #604e43;
+}
+
+.detail-button:active {
+    color: #94b9d2;
+    background-color: #5496bd;
+}
+
+.book-button:active {
+    color: #928a85;
+    background-color: #503e33;
+}
+
+.rating-number {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #666666;
+    background-color: #f2f2f2;
+}
+
+.rating-stars {
+    list-style: none;
+}
+
+.search-form {
+    display: none;
+}
