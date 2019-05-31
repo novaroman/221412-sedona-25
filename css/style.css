@@ -218,3 +218,186 @@ a {
 .search-form {
     display: none;
 }
+
+/* ---- Сетки 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container p {
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation {
+    width: 100%;
+}
+
+.main-navigation-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    width: 1200px;
+    min-height: 56px;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.hello {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
+    width: 1200px;
+    min-height: 510px;
+}
+
+.hello img {
+    margin-top: 77px;
+    width: 460px;
+    height: 355px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    min-height: 240px;
+}
+
+.main-footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.hashtag {
+    width: 240px;
+    margin-left: 70px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-list li {
+    width: 46px;
+    height: 48px;
+
+    margin: 5px;
+}
+
+                        ---- */
+.main-navigation-wrapper {
+    width: 100%;
+
+    min-height: 56px;
+}
+
+.navigation-container {
+    display: flex;
+
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.navigation-item {
+    width: 240px;
+}
+
+.navigation-item:nth-child(2) {
+    margin-right: 240px;
+}
+
+.navigation-item:nth-child(3) {
+    margin-left: 240px;
+}
+
+.navigation-item:first-child {
+    margin-left: 72px;
+}
+
+.navigation-list:last-child {
+    margin-right: 72px;
+}
+
+.main-header-logo {
+    position: absolute;
+    left: 45%;
+    transform: translateX(50%);
+
+    /* Как росположить его по центру? */
+}
+
+.hello-container-wrapper .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello-container-wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+}
+
+.main-footer-wrapper {
+    width: 100%;
+}
+
+.main-footer-wrapper .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reasons {
+    margin-bottom: 62px;
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-instruction {
+    margin-bottom: 62px;
+}
+
+.search-hotel-button {
+    width: 570px;
+    min-height: 87px;
+}
+
+
+
+
+
