@@ -588,6 +588,10 @@ a {
     
 }
 
+.internal-page-footer .main-footer-wrapper {
+    padding-bottom: 6px;
+}
+
 .interest {
     display: flex;
     flex-direction: column;
@@ -778,6 +782,14 @@ a {
     height: 28px;
     background-image: url(../img/svg-sedona/checkbox-on.svg);
     top: 2px;
+}
+
+.filter-checkbox:disabled + .filter-label::after{
+    background-image: url(../img/svg-sedona/checkbox-off-disabled.svg);
+}
+
+.filter-checkbox:checked:disabled + .filter-label::after {
+    background-image: url(../img/svg-sedona/checkbox-on-disabled.svg);
 }
 
 .filter-checkbox {
