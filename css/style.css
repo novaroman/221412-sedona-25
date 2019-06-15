@@ -314,7 +314,9 @@ a {
 }
 
 .search-form {
-    display: flex;
+    animation-name: crawled;
+    animation-duration:1s ;
+
     width: 570px;
     min-height: 395px;
     -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.30);
@@ -324,7 +326,19 @@ a {
     position: absolute;
     top: 263px;
     background-color: #ffffff;
+
+    display: none;
 }
+
+@keyframes crawled {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(5px);
+    }
+  }
 
 .search-form p {
     font-size: 14px;
@@ -1164,4 +1178,8 @@ a {
     right: 0;
     bottom: -1px;
     opacity: 0.9;
+}
+
+.modal-show {
+    display: flex;
 }
