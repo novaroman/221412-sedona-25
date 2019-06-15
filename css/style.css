@@ -649,18 +649,6 @@ a {
     letter-spacing: 0.4px;
 }
 
-.navigation-column-left .navigation-item {
-    text-align: left;
-}
-
-.navigation-column-right .navigation-item {
-    text-align: right;
-}
-
-.navigation-column-right .navigation-item:first-child {
-    padding-right: 4px;
-}
-
 .main-header-logo {
     position: absolute;
     top: 0;
