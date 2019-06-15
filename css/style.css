@@ -559,10 +559,17 @@ a {
     width: 240px;
     margin-top: -2px;
 }
-
-.navigation-column-left,
-.navigation-column-right {
-    display: flex;
+  
+.navigation-item:nth-child(n+3){
+    text-align:right;
+}
+  
+.navigation-item:nth-child(2){
+    margin-right: 89px;
+}
+  
+.navigation-item:nth-child(-n+2){
+    text-align: left;
 }
 
 .navigation-item:nth-child(3) {
@@ -1160,7 +1167,7 @@ a {
 
 .hello-polygon {
     position: relative;
-    bottom: -17.5px;
+    bottom: -19.5px;
 }
 
 .footer-reasons-item-wrapper {
