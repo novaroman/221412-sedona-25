@@ -79,8 +79,11 @@ a {
     line-height: 26px;
     letter-spacing: 0.4px;
     font-weight: 700;
-    text-align: center;
     margin-bottom: 30px;
+    text-align: center;
+
+    padding-left: 350px;
+    padding-right: 350px;
 }
 
 .reasons {
@@ -92,11 +95,12 @@ a {
     line-height: 26px;
     letter-spacing: 0.1px;
     font-weight: 400;
-    text-align: center;
     margin: 0;
 
     margin-top: -4px;
     padding-bottom: 60px;
+    padding-left: 350px;
+    padding-right: 350px;
 }
 
 .interest h2 {
@@ -173,24 +177,38 @@ a {
         -ms-flex-align: center;
             align-items: center;
 
-    width: 46px;
-    height: 48px;
     background-color: #81b3d2;
     text-align: center;
 }
 
 .footer-social-list a {
-    padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    width: 46px;
+    height: 48px;
 }
 
-.footer-social-list li:hover,
-.footer-social-list li:focus {
+.footer-social-item a:hover,
+.footer-social-item a:focus {
     background-color: #669ec0;
 }
 
-.footer-social-list li:active {
-    opacity: 0.5;
+.footer-social-item:active {
     background-color: #5496bd;
+}
+
+.footer-social-item:active path {
+    fill: #88b6d1;
 }
 
 .footer-copyright p {
@@ -200,6 +218,7 @@ a {
 
     margin: 0;
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
     top: 8px;
     left: 13px;
@@ -316,7 +335,7 @@ a {
     margin-left: auto;
 }
 
-.rating-stars {
+.rating-stars-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -330,7 +349,12 @@ a {
     list-style: none;
 }
 
-.rating-stars li {
+.rating-stars-item {
+    background-image: url(../img/svg-sedona/star.svg);
+    background-repeat: no-repeat;
+
+    width: 18px;
+    height: 17px;
     padding-left: 4px;
 }
 
@@ -347,6 +371,7 @@ a {
 
     position: absolute;
     top: 263px;
+    left: 315px;
     background-color: #ffffff;
 
     display: none;
@@ -445,6 +470,8 @@ a {
             justify-content: space-between;
     width: 100%;
     height: 105px;
+
+    padding-bottom: 30px;
 }
 
 .date-wrapper p {
@@ -497,7 +524,7 @@ a {
     display: flex;
     width: 100%;
 
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 .calc-wrapper input {
@@ -507,8 +534,8 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
-    padding-top: 1px;
-    padding-left: 13px;
+    padding-top: 4px;
+    padding-left: 15px;
 
     background-color: #f2f2f2;
     margin-left: -4px;
@@ -553,6 +580,26 @@ a {
     height: 38px;
     padding: 0;
     background-color: #f2f2f2;
+}
+
+.btn-minus {
+    position: relative;
+}
+
+.btn-minus svg {
+    position: absolute;
+    top: 18px;
+    left: 17px;
+}
+
+.btn-plus {
+    position: relative;
+}
+
+.btn-plus svg {
+    position: absolute;
+    top: 15px;
+    left: 17px;
 }
 
 .calc-btn:hover svg,
@@ -645,8 +692,13 @@ a {
     text-align: left;
 }
 
-.navigation-item:nth-child(3) {
-    letter-spacing: 0.4px;
+.navigation-item:nth-of-type(4n+1) {
+    text-align: left;
+}
+
+.navigation-item:nth-of-type(4n+2) {
+    text-align: left;
+    margin-right: 89px;
 }
 
 .main-header-logo {
@@ -794,12 +846,12 @@ a {
     margin-right: 31px;
 }
 
-.footer-copyright:hover path,
-.footer-copyright:focus path {
+.footer-copyright-logo:hover path,
+.footer-copyright-logo:focus path {
     fill: #81b3d2;
 }
 
-.footer-copyright:active path {
+.footer-copyright-logo:active path {
     fill: #bdbbbc;
 }
 
@@ -884,6 +936,7 @@ a {
 
 .filter-label {
     display: inline-block;
+    vertical-align: middle;
     width: 100px;
     padding: 5px 0;
     position: relative;
@@ -900,7 +953,7 @@ a {
     width: 24px;
     height: 24px;
     background-image: url(../img/svg-sedona/checkbox-off.svg);
-    background-size: contain;
+    background-size: auto auto; 
     background-repeat: no-repeat;
     background-position: 50%;
     position: absolute;
@@ -910,10 +963,15 @@ a {
 }
 
 .filter-checkbox:checked + .filter-label::after {
+    position: absolute;
     width: 28px;
     height: 28px;
     background-image: url(../img/svg-sedona/checkbox-on.svg);
+    background-size: auto auto; 
+    background-repeat: no-repeat;
+    background-position: 50%;
     top: 2px;
+    left: 0px;
 }
 
 .filter-checkbox:disabled + .filter-label::after{
@@ -990,7 +1048,7 @@ a {
 
 .up-down-list {
     margin-left: auto;
-    margin-right: -6px;
+    margin-right: 0px;
 }
 
 .sort-item a {
@@ -1016,6 +1074,7 @@ a {
 }
 
 .up-down-btn {
+    background-color: #ffffff;
     border: 0;
 }
 
@@ -1034,6 +1093,10 @@ a {
 
 .up-down-btn:active path {
     fill: #81b3d2;
+}
+
+.down-btn {
+    padding-left: 10px;
 }
 
 .filter-range {
@@ -1194,10 +1257,20 @@ a {
     margin-top: -10px;
 }
 
+.main-reasons-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
 .secondary-reasons-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
@@ -1205,26 +1278,21 @@ a {
 }
 
 .secondary-reasons-item {
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
     width: 400px;
-    height: 330px;
+    min-height: 330px;
+    padding-bottom: 48px;
 }
 
 .secondary-reasons-item-wrapper {
+    position: relative;
+
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-.secondary-reasons-item-wrapper svg {
-    padding-top: 60px;
-    padding-bottom: 27px;
-    padding-left: 132px;
-}
-
-.secondary-reasons-item:nth-child(3) .secondary-reasons-item-wrapper svg {
-    padding-top: 55px;
-    padding-left: 137px;
 }
 
 .main-part-wrapper {
@@ -1246,13 +1314,23 @@ a {
             flex-direction: column;
 
     width: 400px;
-    height: 256px;
+    min-height: 256px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 48px;
+
+
+    -webkit-box-sizing: border-box;
+
+
+            box-sizing: border-box;
 
     background-color: #81b3d2;
-    color: #ffffff;
+    color: black;
 }
 
-.main-reasons-item:nth-child(2) .main-part-wrapper img {
+.main-reasons-item:nth-child(2) img {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -1281,19 +1359,66 @@ a {
     padding-top: 22px;
 }
 
-.main-reasons-item-wrapper div {
-    padding-left: 30px;
-    padding-right: 30px;
+.main-reasons-text {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.main-reasons-item:nth-child(2) .main-reasons-text {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-reasons-item-wrapper:nth-child(2) p {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .secondary-reasons-title {
     margin: 0;
+    padding-top: 160px;
     
     font-weight: 700;
     font-size: 21px;
     line-height: 21px;
 
     text-align: center;
+}
+
+.secondary-reasons-item:nth-child(1) .secondary-reasons-title::before {
+    position: absolute;
+    content: "";
+
+    width: 75px;
+    height: 72px;
+    background-image: url(../img/svg-sedona/icon-1.svg);
+    background-repeat: no-repeat;
+    top: 60px;
+    left: 163px;
+}
+
+.secondary-reasons-item:nth-child(2) .secondary-reasons-title::before {
+    position: absolute;
+    content: "";
+
+    width: 75px;
+    height: 75px;
+    background-image: url(../img/svg-sedona/icon-3.svg);
+    background-repeat: no-repeat;
+    top: 60px;
+    left: 163px;
+}
+
+.secondary-reasons-item:nth-child(3) .secondary-reasons-title::before {
+    position: absolute;
+    content: "";
+
+    width: 75px;
+    height: 77px;
+    background-image: url(../img/svg-sedona/icon-2.svg);
+    background-repeat: no-repeat;
+    top: 60px;
+    left: 163px;
 }
 
 .secondary-reasons-text {
@@ -1307,6 +1432,16 @@ a {
     text-align: center;
 }
 
+.secondary-reasons-item:first-child .secondary-reasons-text {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.secondary-reasons-item:nth-child(2) .secondary-reasons-text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .hello-polygon {
     position: relative;
     bottom: -19.5px;
@@ -1317,14 +1452,29 @@ a {
     color: #000000;
 }
 
+.footer-reasons-item:nth-child(3) .footer-reasons-text {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-reasons-item:nth-child(4) .footer-reasons-text {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer-reasons-item:nth-child(5) .footer-reasons-text {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
 .map {
-    display: inline-block;
     height: 592px;
 }
 
 .main-footer {
     position: absolute;
-    right: 0;
+    right: 0px;
+    left: 0px;
     bottom: -1px;
     opacity: 0.9;
 }
